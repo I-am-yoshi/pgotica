@@ -1,56 +1,76 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--Comentário-->
+<!--HTML -> Hypertext Markup Language-->
+<!--Tag <nometag>texto</tagdeFechamento> -->
+<!--Tag-Atributos: <nomeTagAtributo="Valor">-->    
+
 <html lang="pt-BR"><!--lang para interpretar o idioma-->
-    <!--Tudo q o site precisa, configuração, importação de recursos etc...-->
-    <!--O head é reservado p/ programas como google, incone da página e etc..o conteudo do head ñ aparece na pg--> 
-    <head> 
+    <!--Head-Tudo q o site precisa, configuração, importação de recursos etc...-->     
+    <head><!--O head é reservado p/ programas como google, incone da página e etc..o conteudo do head ñ aparece na pg--> 
       
     </head>
     <!--O body é o corpo da página, fica todo o conteúdo da página-->
     <body>
-        <header>
+        <header><!--cabeçalho da pg fica na header-->
 
         Horário de abertura: 9:00 - 18:00h
-        <br/>
-        <img alt="Logo da empresa" title="Aqui e apresentado o lodo da empresa My Desktop" src="img/logopexels-athena.jpg"/> 
-        <nav>          
-             Página Inicial | Produtos e Marcas | Fale Conosco (Onde estamos)
+        <br/><!--br- pula uma linha-->
+        <img alt="Logo da empresa" title="Aqui e apresentado o lodo da empresa My Desktop" src="img/logopexels-athena.jpg"/> <!--Adicionar imagem-->
+        <!--Title- aparece quando passa o mouse-legenda para imagens| Src é osource(fonte)-->
+        <nav> <!--Na nav fica a navegação para outras pgs, menus, produtod, marcas.-->         
+             Página Inicial | Produtos e Marcas | <a title="Fale Conosco" href="faleconosco.html">Fale Conosco</a> 
+             <a href="ondeestamos.html">Onde estamos</a> 
         </nav>
         </header>
-        <section> 
+        <section> <!--É a sessao de cada conteudo da página-->
             Ajuda profissional para escolher os melhores computadores
 
-            Notebooks, Computadores e Telas
+            Notebooks, Computadores e Monitores
         
-            (Onde estamos)
+            <a href="ondeestamos.html">Onde estamos</a><!--O href - é o destino da página-->
+
         </section>
+
         <section>
-            Trabalhamos com as melhores marcas de notebooks, telas
+            Trabalhamos com as melhores marcas de monitores
+            <img alt="Logo de marcas(Telas)" src="img/logoMonitores.png"/>
         </section>
 
         <section>
             e de computadores
+            <img alt="Logo marcas(Computadores)" src="img/logo.jpg"/>
         </section>
 
         <section>
-            Grande variedade de artigos informáticos
+            Grandes variedades de artigos informáticos
 
-            (Venha Conferir)
+            <a href="ondeestamos.html">Venha conferir</a>
         </section>
 
-        <footer>
-            <div><!--Coloca a div uma dentro da outro, para que na pg apareça os conteúdos um do lado do outro-->
+        <footer><!--Roda pé da pg-->
+            <div><!--Coloca a div uma dentro da outro, para que na pg apareça os conteúdos um do lado do outro| na div fica os conteudos livre que quiser colocar-->
                 <div>
-                    (Logo)
+                    <img alt="Logo da empresa" title="Aqui e apresentado o lodo da empresa My Desktop" src="img/logopexels-athena.jpg"/>
                     Nós oferecemos um serviço completo para você usufruir os melhor do seu computador.
-                    (link - Facebook, Twitter, Instagran)
+                    <a  href="#">
+                        <img alt="Link para facebook " src="img/incone_facebook.jpg" width="50"/>
+                    </a>
+                    <a href="#">
+                        <img alt="Link para twitter" src="img/logo_twitter.jpg" width="50"/>
+                    </a>
+                    <a href="#">
+                        <img alt="Link para o instagram" src="img/logo_instagram.jpg" width="50"/>
+                    </a>
+                    <a href="#">
+                        <img alt="Link para Linkedin" src="img/linkedin.png" width="50" />
+                    </a>
                 </div>
                 <div>
                     Links
 
                     Início
                     Produtos e Marcas
-                    Fale Conosco
-                    Onde Estamos
+                    <a title="Fale Conosco" href="faleconosco.html">Fale Conosco</a>
+                    <a href="ondeestamos.html">Onde estamos</a>
                 </div>
                 <div>
                     Contato
@@ -58,14 +78,15 @@
                     Endereço: Rua X, endereço Y, Avenida Z,
                     Cidade, UF 72000-000.
 
-                    Telefone: (00) 3333-3333.
+                    Telefone: <a href="tel:003333-3333">(00) 3333-3333.</a>
 
-                    Email: mydesktop@mydesktop.com.br
+                    Email: <a href="mailto:mydesktop@mydesktop.com.br">mydesktop@mydesktop.com.br</a> 
                 </div>
             </div>
             <div>
                 Todos os direitos reservados (@) 2017.
-                Termos de uso e política de privacidade.
+                <a href="termosdeuso.html">Termos de uso </a> e  
+                <a href="politicadeprivacidade.html">Política de privacidade. </a>
             </div>
         </footer>
     </body>
