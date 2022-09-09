@@ -1,1 +1,55 @@
-Fale conosco.
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Fale conosco</title>
+    </head>
+    <!--O Header é copiado para as outras páginas, porque é o cabeçalho da página-->
+    <!--Na pg faleconosco- tem o formulário e Info de contatos que fica dentro de uma div cada-->
+    <body>
+        <div>
+            <!--
+                Metodo: 
+                - GET: Dados são passados pela URL. Obter informações
+                - POST: Dados são passados pela Requisição.
+                - Em todo caso necessita de um backend para saber como salvar essa informação.
+            -->
+            <form enctype="application/x-www-form-urlencoded" method="post" ><!--tag para formulário-->
+                <label for="NomeCompleto">Digite seu nome</label><!--Campo do form ex: Nome-->
+                <!--
+                    **Input entrada p/ usuario- atributo **type pp/ tipo de entrada- **name atributo para enviar os dados - **valor tamanho do campo numeros de letras que consegue receber, se preencher com valor já vem com um valor pre definido- **Placeholder é um texto de marca d'água, p/ interação com o usuario - **id identificador **for atributo para id, atribui foco no campo descrito NomeCompleto, para boas práticas de programação.
+                -->
+                <input id="NomeCompleto" type="text" name="Nome_Completo" placeholder="Digite seu nome completo"/>
+                <br/>
+                <label for="Email">Email</label>
+                <input id="Email" type="text" name="Email" placeholder="Digite seu email"/>
+                <br>
+                <label for="Telefone">Telefone</label>
+                <input id="Telefone" type="text" name="Telefone" placeholder="Digite seu telefone"/>
+                <br>
+                <label for="Mensagem">Mensagem</label>
+                <textarea name="Mensagem"></textarea><!--textarea é um input tipo texto, que permite saltar linhas e escrever um texto grande-->
+                <br/>
+                <input type="submit"/> 
+            </form>            
+        </div>
+        <div>
+            <div>
+                Telefone: (65) 95623-5689.
+                Redes Sociais: <img alt="Linkedin" src="img/linkedin.png" width="42"/> 
+                <img alt="Facebook" src="img/incone_facebook.jpg" width="50"/>                
+                <img alt="twitter" src="img/logo_twitter.jpg" width="50"/>
+                <img alt="Instagran" src="img/logo_instagram.jpg" width="50"/>
+            </div>
+            <!--adress para os dados de endereço-->
+            <address>
+                Brasil, Cbá
+                <br/>
+                78000-000
+                <br/>
+                Rua/AV, nº 01
+                <br/>
+                Qd/Bairro/Cidade: Cuiabá-MT.    
+            </address>           
+        </div>
+    </body>
+</html>
